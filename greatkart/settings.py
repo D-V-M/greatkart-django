@@ -27,7 +27,7 @@ SECRET_KEY = '1kmz^ftg(q59b5#czo3syel*$nxa5ev7b(polzx^ndwf*$$qad'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['greatkartdjango.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,7 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR /'static'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     'greatkart/static',
 ]
@@ -153,3 +153,5 @@ EMAIL_HOST_PASSWORD = 'mummypapadidi'
 EMAIL_USE_TLS = True
 
 
+# Activate Django-Heroku.
+django_heroku.settings(locals())
