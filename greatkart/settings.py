@@ -27,7 +27,7 @@ SECRET_KEY = '1kmz^ftg(q59b5#czo3syel*$nxa5ev7b(polzx^ndwf*$$qad'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['greatkartdjango.herokuapp.com']
+ALLOWED_HOSTS = ['reatkartdjango.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -129,8 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR /'static'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     'greatkart/static',
 ]
