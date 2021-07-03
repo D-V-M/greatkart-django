@@ -27,7 +27,7 @@ SECRET_KEY = '1kmz^ftg(q59b5#czo3syel*$nxa5ev7b(polzx^ndwf*$$qad'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['greatkartdjango.herokuapp.com']
+ALLOWED_HOSTS = ['greatkartdjango.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
